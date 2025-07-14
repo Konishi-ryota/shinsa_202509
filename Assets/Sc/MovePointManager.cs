@@ -1,16 +1,24 @@
+using System;
+using UnityEditor;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
-public class MovePointManager : MonoBehaviour
+#if UNITY_EDITOR
+[CustomEditor(typeof(MovePoint))]
+public class MovePointManager : Editor
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    MovePoint movepoint => target as MovePoint;
 
-    // Update is called once per frame
-    void Update()
+    private void OnSceneGUI()
     {
-        
+        Handles.color = Color.yellow;
+
+        for (int i = 0; i < movepoint.points.Length; i++)
+        {
+            EditorGUI.BeginChangeCheck();//EndCheckChangeとの間で変更が行われてるかチェック
+
+
+        }
     }
 }
+#endif 
