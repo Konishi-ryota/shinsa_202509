@@ -19,6 +19,11 @@ public class MovePointManager : Editor
             Vector3 currentpoint = movepoint.points[i];//ˆÊ’uŽæ“¾
             Vector3 newpoint = Handles.FreeMoveHandle
                 (currentpoint, 0.7f, new Vector3(0.3f, 0.3f, 0.3f), Handles.SphereHandleCap);
+
+            GUIStyle textStyle = new();
+            textStyle.fontSize = 18;
+            textStyle.normal.textColor = Color.white;
+            Vector3 textpos = Vector3.down * 0.35f + Vector3.right * 0.35f;
         }
     }
 }
