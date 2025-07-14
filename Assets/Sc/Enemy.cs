@@ -22,6 +22,12 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        Move();
+    }
+    private void Move()
+    {
+        transform.position = Vector3.MoveTowards(transform.position,
+                                                 CurrentPointPosition,
+                                                 EnemySpeed * Time.deltaTime);
     }
 }
