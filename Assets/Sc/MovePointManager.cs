@@ -24,6 +24,16 @@ public class MovePointManager : Editor
             textStyle.fontSize = 18;
             textStyle.normal.textColor = Color.white;
             Vector3 textpos = Vector3.down * 0.35f + Vector3.right * 0.35f;
+
+            Handles.Label(movepoint.points[i] + textpos, $"{i + 1}", textStyle);
+
+            EditorGUI.EndChangeCheck();
+
+            if (EditorGUI.EndChangeCheck())
+            {
+                Undo.RecordObject(target, "Move");
+                movepoint.points[i] = newpoint;
+            }
         }
     }
 }
