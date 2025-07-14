@@ -1,11 +1,15 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [NonSerialized] public int EnemyHP;
-
+    public int EnemyHP;
     [SerializeField] int EnemySpeed;
+
+    private int currentMovePointIndex;
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
