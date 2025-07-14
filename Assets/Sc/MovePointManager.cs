@@ -16,8 +16,7 @@ public class MovePointManager : Editor
         for (int i = 0; i < movepoint.points.Length; i++)
         {
             EditorGUI.BeginChangeCheck();//EndCheckChangeとの間で変更が行われてるかチェック
-
-
+            Vector3 currentpoint = movepoint.points[i];//位置取得
         }
     }
 }
