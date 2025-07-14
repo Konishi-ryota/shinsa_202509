@@ -9,11 +9,13 @@ public class Enemy : MonoBehaviour
 
     private int currentMovePointIndex;
 
+    [NonSerialized] public MovePoint movepoint;
+    public Vector3 CurrentPointPosition => movepoint.GetPointPosision(currentMovePointIndex);
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
