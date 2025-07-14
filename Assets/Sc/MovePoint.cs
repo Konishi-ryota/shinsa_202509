@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class MovePoint : MonoBehaviour
 {
-    public GameObject[] points;
+    public Vector3[] points;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,7 +15,7 @@ public class MovePoint : MonoBehaviour
         
     }
     
-    public GameObject GetPointPosision(int index)
+    public Vector3 GetPointPosision(int index)
     {
         return points[index];
     }
@@ -29,7 +29,7 @@ public class MovePoint : MonoBehaviour
             Gizmos.color = Color.yellow;
 
             //ポジション、半径
-            Gizmos.DrawWireSphere(points[i].transform.position, 0.5f);
+            Gizmos.DrawWireSphere(points[i], 0.5f);
         }
     }
 }
