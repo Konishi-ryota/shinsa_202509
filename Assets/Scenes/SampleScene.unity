@@ -406,7 +406,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 073c1706b2d8ac6489491762a1b4e9f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: []
+  points:
+  - {x: 1.5237193, y: 3.0039895, z: 1.7648945}
 --- !u!4 &586823357
 Transform:
   m_ObjectHideFlags: 0
@@ -620,6 +621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 129e162c02153f543bfd9873c382f099, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EnemyHP: 0
   EnemySpeed: 0
 --- !u!1 &1887690198
 GameObject:
