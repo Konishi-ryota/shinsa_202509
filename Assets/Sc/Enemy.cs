@@ -32,6 +32,6 @@ public class Enemy : MonoBehaviour
     }
     private bool NextPointReached()
     {
-
+        float distance;
     }
 }
