@@ -32,6 +32,8 @@ public class Enemy : MonoBehaviour
     }
     private bool NextPointReached()
     {
-        float distance;
+        float distance = (transform.position - CurrentPointPosition).sqrMagnitude;
+
+
     }
 }
