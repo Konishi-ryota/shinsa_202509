@@ -30,6 +30,11 @@ public class Enemy : MonoBehaviour
                                                  CurrentPointPosition,
                                                  EnemySpeed * Time.deltaTime);
     }
+
+    private void UpdatePointIndex()
+    {
+
+    }
     private bool NextPointReached()
     {
         float distance = (transform.position - CurrentPointPosition).sqrMagnitude;
