@@ -30,7 +30,7 @@ public class Enemy : MonoBehaviour
     }
     private void Move()
     {
-        transform.position = Vector3.MoveTowards(transform.position,
+        transform.position = Vector3.MoveTowards(transform.position,//ìÆÇ≠ëOÇÃèÍèä
                                                  CurrentPointPosition,
                                                  EnemySpeed * Time.deltaTime);
     }
