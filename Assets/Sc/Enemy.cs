@@ -44,6 +44,10 @@ public class Enemy : MonoBehaviour
             currentMovePointIndex++;
         }
     }
+    /// <summary>
+    /// –Ú•W’n“_‚É‚Â‚¢‚½‚çtrue
+    /// </summary>
+    /// <returns></returns>
     private bool NextPointReached()
     {
         float distance = (transform.position - CurrentPointPosition).sqrMagnitude;
