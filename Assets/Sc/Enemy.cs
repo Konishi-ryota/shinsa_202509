@@ -35,7 +35,7 @@ public class Enemy : MonoBehaviour
     {
         if (currentMovePointIndex < movepoint.points.Length - 1)
         {
-
+            currentMovePointIndex++;
         }
     }
     private bool NextPointReached()
