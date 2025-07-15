@@ -32,7 +32,7 @@ public class Enemy : MonoBehaviour
     {
         transform.position = Vector3.MoveTowards(transform.position,//“®‚­‘O‚ÌêŠ
                                                  CurrentPointPosition,//“®‚¢‚Ä‚Ù‚µ‚¢êŠ
-                                                 EnemySpeed * Time.deltaTime);
+                                                 EnemySpeed * Time.deltaTime);//“®‚­‘¬“x
     }
 
     private void UpdatePointIndex()
