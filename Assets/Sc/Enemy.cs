@@ -30,4 +30,8 @@ public class Enemy : MonoBehaviour
                                                  CurrentPointPosition,
                                                  EnemySpeed * Time.deltaTime);
     }
+    private bool NextPointReached()
+    {
+
+    }
 }
