@@ -23,6 +23,10 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         Move();
+        if (NextPointReached())
+        {
+
+        }
     }
     private void Move()
     {
