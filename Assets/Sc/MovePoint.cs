@@ -20,16 +20,16 @@ public class MovePoint : MonoBehaviour
         return points[index];
     }
 
+    /// <summary>
+    /// Gizmosの拡張機能
+    /// </summary>
     private void OnDrawGizmos()
     {
-        //for文で配列の数値分処理する
-        for (int i = 0; i < points.Length; i++)
+        for (int i = 0; i < points.Length; i++)//for文で配列の数値分処理する
         {
-            //色を指定
-            Gizmos.color = Color.yellow;
+            Gizmos.color = Color.yellow;//色を指定
 
-            //ポジション、半径
-            Gizmos.DrawWireSphere(points[i], 0.5f);
+            Gizmos.DrawWireSphere(points[i], 0.5f);//ポジション、半径
         }
     }
 }
