@@ -34,6 +34,10 @@ public class Enemy : MonoBehaviour
     {
         float distance = (transform.position - CurrentPointPosition).sqrMagnitude;
 
-
+        if (distance < 0.01)
+        {
+            return true;
+        }
+        return false;
     }
 }
