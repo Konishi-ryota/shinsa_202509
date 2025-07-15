@@ -34,7 +34,9 @@ public class Enemy : MonoBehaviour
                                                  CurrentPointPosition,//“®‚¢‚Ä‚Ù‚µ‚¢êŠ
                                                  EnemySpeed * Time.deltaTime);//“®‚­‘¬“x
     }
-
+    /// <summary>
+    /// Ÿ‚ÉˆÚ“®‚·‚é’n“_‚ğŒˆ‚ß‚é
+    /// </summary>
     private void UpdatePointIndex()
     {
         if (currentMovePointIndex < movepoint.points.Length - 1)
