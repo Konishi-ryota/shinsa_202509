@@ -25,7 +25,7 @@ public class Enemy : MonoBehaviour
         Move();
         if (NextPointReached())
         {
-
+            UpdatePointIndex();
         }
     }
     private void Move()
