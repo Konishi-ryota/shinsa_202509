@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -6,7 +7,7 @@ public class Enemy : MonoBehaviour
     public int EnemyHP;
     [SerializeField] int EnemySpeed;
 
-    [SerializeField] Transform[] Ally;
+    List<Transform> targetInRange = new();
 
     private int currentMovePointIndex;
 
@@ -55,6 +56,7 @@ public class Enemy : MonoBehaviour
 
         if (distance < 0.01)
         {
+            Debug.Log($"–Ú•W’n“_{currentMovePointIndex}‚É“ž’…");
             return true;
         }
         return false;
@@ -64,7 +66,14 @@ public class Enemy : MonoBehaviour
     {
         if (other.CompareTag("Ally"))
         {
-            transform.LookAt(Ally[Ally.Length]);
+            targetInRange.Add(other.transform);
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Ally"))
+        {
+            targetInRange.Remove(other.transform);
         }
     }
 }
