@@ -517,7 +517,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points:
   - {x: 2.151817, y: 0.47383785, z: 1.2377768}
-  - {x: 4.8106966, y: 0.408808, z: 2.2099693}
+  - {x: 4.341656, y: 0.55966806, z: 2.1250815}
   - {x: 6.5133133, y: 0.43466663, z: 2.8528264}
 --- !u!4 &586823357
 Transform:
@@ -598,7 +598,7 @@ GameObject:
   - component: {fileID: 1193196170}
   - component: {fileID: 1193196175}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
