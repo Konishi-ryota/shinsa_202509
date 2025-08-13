@@ -1,11 +1,12 @@
 using System;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
     public int EnemyHP;
     [SerializeField] int EnemySpeed;
+
+    [SerializeField] Transform[] Ally;
 
     private int currentMovePointIndex;
 
@@ -57,5 +58,13 @@ public class Enemy : MonoBehaviour
             return true;
         }
         return false;
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("Ally"))
+        {
+            transform.LookAt(Ally[Ally.Length]);
+        }
     }
 }
