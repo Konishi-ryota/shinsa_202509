@@ -14,7 +14,11 @@ public class MovePoint : MonoBehaviour
     {
         
     }
-    
+    /// <summary>
+    /// “G‚ªŽŸ‚ÉˆÚ“®‚·‚é’n“_‚ðŒˆ‚ß‚é
+    /// </summary>
+    /// <param name="index"></param>
+    /// <returns></returns>
     public Vector3 GetPointPosision(int index)
     {
         return points[index];
